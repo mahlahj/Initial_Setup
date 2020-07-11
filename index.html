@@ -2,32 +2,59 @@
 <html lang="en">
 
 <head>
-    <!--2.- This was added as per request from the tutor. Also Must be done to use BootStrap4-->
-    <!--2.- Required meta tags always come first -->
+<!-- 2.- This was added as per request from the tutor. Also Must be done to use BootStrap4-->
+<!-- 2.- Required meta tags always come first -->
     <meta charset="utf-8">
+<!-- 3.- Bootstrap Grid System and Responsive Design.-->
+<!-- The viewport meta tag ensures that the screen width is set to the device width-->
+<!-- and the content is rendered with this width in mind. This brings us to the second issue,-->
+<!-- designing the websites to be responsive to the size of the viewport.-->
+<!-- This is where the Bootstrap grid system comes to our aid.-->
+<!-- Bootstrap makes available four sizes, xs for extra small, sm for small, md for medium and-->
+<!-- lg for large screen sizes. We have already seen the basics of responsive design.-->
+<!-- In this exercise, we will employ the Bootstrap grid classes to design the websites.-->
+<!-- We would like our website to have the content stacked on extra small devices,-->
+<!-- but become horizontal within each row for smaller devices and beyond.-->
+<!-- Towards this goal, we will make use of the classes .col-*, .col-sm-*, col-md-*, and .col-lg-*-->
+<!-- for defining the layouts for the various device sizes.-->
+<!-- We can specify how many columns each piece of content will occupy within a row,-->
+<!-- all adding up to 12 or a multiple thereof.-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--3.- The above metatag makes our site responsive.-->
+<!-- 3.- The above metatag makes our site responsive.-->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!--2.- Bootstrap CSS -->
+<!-- 2.- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
-<!--3.- We create a "Jumbotron" class onto the header.-->
-<!--3.- That will set apart the content of the header apart from the rest of the page.-->
+<!-- 3.- We create a "Jumbotron" class onto the header.-->
+<!-- That will set apart the content of the header from the rest of the page.-->
+<!-- Add the class jumbotron to the header class as shown below.-->
+<!-- This turns the header element into a Bootstrap component named Jumbotron.-->
+<!-- A jumbotron is used to showcase key content on a website.-->
+<!-- In this case we are using it to highlight the name of the restaurant.-->
     <header class="jumbotron">
-<!--3.- Apply a container to this div to constrain it.-->
+<!-- 3.- Apply a container to this div to constrain it.-->
+<!-- We use the container class to keep content within a fixed width on the screen,-->
+<!-- determined by the size of the screen. The alternative is to use the container-fluid class-->
+<!-- to make the content automatically to span the full width of the screen.-->
+<!-- Add the container class to the first div right after the </header> in the file as follow.-->
         <div class="container">
-<!--3.- Apply a row to this div to constrain it.-->
+<!-- 3.- Apply a row to this div to constrain it.-->
+<!-- The class row is added to the first-level inner div elements inside the container.-->
+<!-- This organizes the page into rows of content.-->
             <div class="row">
-<!--3.- Apply a column to certain values.-->
-                <div class="col-12 col-sm-16">
+<!-- 3.- Apply a column to certain values.-->
+<!-- In the header row, we will display the restaurant name and the description to occupy 6 columns,-->
+<!-- while we will leave six columns for displaying the restaurant logo in the future.-->
+<!-- To do that we go into the jumbotron and define the classes for the inner divs as follows:-->
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-<!--3.- Apply a column to certain values.-->
+<!--3.- Apply a column to certain values as mentioned above.-->
                 <div class="col-12 col-sm">
                 </div>
             </div>
@@ -38,55 +65,66 @@
     <div class="container">
         <div class="row">
 <!--3.- Apply a column to certain values.-->
-<!--3A.- Using Order with Column Layout Classes <order-sm-last/first>.-->
-<!--3A.- Those "invert" the viewing order of the headers and its paragraphs.-->
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+<!-- For the remaining three div rows that contain the content, we'll define the classes -->
+<!-- for the inner divs as follows: "col-12 col-sm-4 order-sm-last col-md-3", and -->
+<!-- "col col-sm col-md"-->
+<!-- 3A.- Using Order with Column Layout Classes <order-sm-last/first>.-->
+<!-- Those "invert" the viewing order of the headers and its paragraphs.-->
+<!-- So, in the content rows, we'll have the title and description to alternate -->
+<!-- so that it gives an interesting look to the web page.-->
+<!-- For extra small screens, the default stacked layout works best.-->
+<!-- This can be accomplished by using the "order-sm-last" for the first and the third rows as follows:-->
+            <div class="col-12 col-sm-4 order-sm-last col-md-3"><!-- FirstRowInit.-->
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-<!--3.- Apply a column to occupy the remaining columns not used above-->
+<!-- 3.- Apply a column to occupy the remaining columns not used above, and the "order-sm-first.-->
             <div class="col col-sm order-sm-first col-md">
                 <h2>Uthappizza</h2>
                 <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-            </div>
+            </div><!-- FirstRowEnding.-->
         </div>
 
-<!--3.- Same as above numbered commentary on rows.-->
+<!-- 3.- Same as above numbered commentary on rows.-->
         <div class="row">
-<!--3.- Apply a column to certain values.-->
+<!-- 3.- Apply a column to certain values.-->
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-<!--3.- Apply a column to occupy the remaining columns not used above-->
+<!-- 3.- Apply a column to occupy the remaining columns not used above.-->
             <div class="col col-sm col-md">
                 <h2>Weekend Grand Buffet</h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             </div>
         </div>
-<!--3.- Same as above numbered commentary on rows.-->
+<!-- 3.- Same as above numbered commentary on rows.-->
         <div class="row">
-<!--3.- Apply a column to certain values.-->
-<!--3A.- Using Order with Column Layout Classes <order-sm-last/first>.-->
-<!--3A.- Those "invert" the viewing order of the headers and its paragraphs.-->
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+<!-- 3.- Apply a column to certain values.-->
+<!-- 3A.- Using Order with Column Layout Classes <order-sm-last/first>.-->
+<!-- 3A.- Those "invert" the viewing order of the headers and its paragraphs.-->
+            <div class="col-12 col-sm-4 order-sm-last col-md-3"><!-- ThirdRowInit.-->
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-<!--3.- Apply a column to occupy the remaining columns not used above.-->
+<!-- 3.- Apply a column to occupy the remaining columns not used above.-->
             <div class="col col-sm order-sm-first col-md">
                 <h2>Alberto Soumaya</h2>
                 <h4>Executive Chef</h4>
                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-            </div>
+            </div><!-- ThirdRowEnding.-->
         </div>
     </div>
 
     <footer>
-<!--3.- Exact same as above commentary on containers.--->
+<!-- 3.- Exact same as above commentary on containers.--->
+<!-- 3.- For the footer, let us define the classes for the inner divs as follows:-->
+<!-- "col-4 col-sm-2" ... "col-7 col-sm-5" ... "col-12 col-sm-4" ..."col-auto"-->
+<!-- In the footer add a container class to the first inner div and a row class to the second inner div.-->
         <div class="container">
-<!--3.- Exact same as above commentary on rows.-->>
+<!-- 3.- Exact same as above commentary on rows.-->>
             <div class="row">
-<!--3.- For small will use 4 and small to extralarge 2 columns.-->
-<!--3B.-Using Offset with Column Layout Classes <offset-1> (1 value to move).-->
-<!--3B.- That "moves" the viewing order by 1 column of the unordered list/list items.-->
+<!-- 3.- For small will use 4 and small to extralarge 2 columns.-->
+<!-- 3B.-Using Offset with Column Layout Classes <offset-1> (1 value to move).-->
+<!-- 3B.- That "moves" the viewing order by 1 column of the unordered list/list items.-->
+<!-- This updates the class as follows: "col-4 offset-1 col-sm-2" from "col-4 col-sm-2".-->
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul>
@@ -96,7 +134,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-<!--3.- Uses 7 columns, leaving 1 free the first one. Uses 7 columns, leaving 5 columns free for the second.-->
+<!-- 3.- Uses 7 columns, leaving 1 free the first one. Uses 7 columns, leaving 5 columns free for the second.-->
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
@@ -108,7 +146,7 @@
 		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
-<!--3.- This will use 12 columns first and 4 second.-->
+<!-- 3.- This will use 12 columns first and 4 second.-->
                 <div class="col-12 col-sm-4">
                     <div>
                         <a href="http://google.com/+">Google+</a>
@@ -120,9 +158,9 @@
                     </div>
                 </div>
            </div>
-<!--3.- Exact same as above numbered comentary on rows.-->
+<!-- 3.- Exact same as above numbered comentary on rows.-->
            <div class="row">
-<!--3.- This will automatically assign columns required for the content.-->     
+<!-- 3.- This will automatically assign columns required for the content.-->     
                 <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
@@ -130,7 +168,7 @@
         </div>
     </footer>
  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
- <!--This was added as per request from the tutor. Also Must be done to use JQ.js-->
+ <!-- This was added as per request from the tutor. Also Must be done to use JQ.js-->
  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
