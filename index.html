@@ -2,54 +2,57 @@
 <html lang="en">
 
 <head>
-<!-- 2.- This was added as per request from the tutor. Also Must be done to use BootStrap4-->
-<!-- 2.- Required meta tags always come first -->
+<!-- 2.- This was added as per request from the tutor. Also Must be done to use BootStrap4
+     2.- Required meta tags always come first -->
     <meta charset="utf-8">
-<!-- 3.- Bootstrap Grid System and Responsive Design.-->
-<!-- The viewport meta tag ensures that the screen width is set to the device width-->
-<!-- and the content is rendered with this width in mind. This brings us to the second issue,-->
-<!-- designing the websites to be responsive to the size of the viewport.-->
-<!-- This is where the Bootstrap grid system comes to our aid.-->
-<!-- Bootstrap makes available four sizes, xs for extra small, sm for small, md for medium and-->
-<!-- lg for large screen sizes. We have already seen the basics of responsive design.-->
-<!-- In this exercise, we will employ the Bootstrap grid classes to design the websites.-->
-<!-- We would like our website to have the content stacked on extra small devices,-->
-<!-- but become horizontal within each row for smaller devices and beyond.-->
-<!-- Towards this goal, we will make use of the classes .col-*, .col-sm-*, col-md-*, and .col-lg-*-->
-<!-- for defining the layouts for the various device sizes.-->
-<!-- We can specify how many columns each piece of content will occupy within a row,-->
-<!-- all adding up to 12 or a multiple thereof.-->
+<!-- 3.- Bootstrap Grid System and Responsive Design.
+         The viewport meta tag ensures that the screen width is set to the device width
+         and the content is rendered with this width in mind. This brings us to the second issue,
+         designing the websites to be responsive to the size of the viewport.
+         This is where the Bootstrap grid system comes to our aid.
+         Bootstrap makes available four sizes, xs for extra small, sm for small, md for medium and
+         lg for large screen sizes. We have already seen the basics of responsive design.
+         In this exercise, we will employ the Bootstrap grid classes to design the websites.
+         We would like our website to have the content stacked on extra small devices,
+         but become horizontal within each row for smaller devices and beyond.
+         Towards this goal, we will make use of the classes .col-*, .col-sm-*, col-md-*, and .col-lg-*
+         for defining the layouts for the various device sizes.
+         We can specify how many columns each piece of content will occupy within a row,
+         all adding up to 12 or a multiple thereof.-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- 3.- The above metatag makes our site responsive.-->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 <!-- 2.- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<!-- 4.- With the next line we add the CSS styles made in the respective css folder of the project.-->
+    <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
-<!-- 3.- We create a "Jumbotron" class onto the header.-->
-<!-- That will set apart the content of the header from the rest of the page.-->
-<!-- Add the class jumbotron to the header class as shown below.-->
-<!-- This turns the header element into a Bootstrap component named Jumbotron.-->
-<!-- A jumbotron is used to showcase key content on a website.-->
-<!-- In this case we are using it to highlight the name of the restaurant.-->
+<!-- 3.- We create a "Jumbotron" class onto the header.
+         That will set apart the content of the header from the rest of the page.
+         Add the class jumbotron to the header class as shown below.
+         This turns the header element into a Bootstrap component named Jumbotron.
+         A jumbotron is used to showcase key content on a website.
+         In this case we are using it to highlight the name of the restaurant.-->
     <header class="jumbotron">
-<!-- 3.- Apply a container to this div to constrain it.-->
-<!-- We use the container class to keep content within a fixed width on the screen,-->
-<!-- determined by the size of the screen. The alternative is to use the container-fluid class-->
-<!-- to make the content automatically to span the full width of the screen.-->
-<!-- Add the container class to the first div right after the </header> in the file as follow.-->
+<!-- 3.- Apply a container to this div to constrain it.
+         We use the container class to keep content within a fixed width on the screen,
+         determined by the size of the screen. The alternative is to use the container-fluid class
+         to make the content automatically to span the full width of the screen.
+         Add the container class to the first div right after the </header> in the file as follow.-->
         <div class="container">
-<!-- 3.- Apply a row to this div to constrain it.-->
-<!-- The class row is added to the first-level inner div elements inside the container.-->
-<!-- This organizes the page into rows of content.-->
-            <div class="row">
-<!-- 3.- Apply a column to certain values.-->
-<!-- In the header row, we will display the restaurant name and the description to occupy 6 columns,-->
-<!-- while we will leave six columns for displaying the restaurant logo in the future.-->
-<!-- To do that we go into the jumbotron and define the classes for the inner divs as follows:-->
+<!-- 3.- Apply a row to this div to constrain it.
+         The class row is added to the first-level inner div elements inside the container.
+         This organizes the page into rows of content.-->
+<!-- 4.- Apply a class 'row header' to the line below:-->
+            <div class="row row-header">
+<!-- 3.- Apply a column to certain values.
+         In the header row, we will display the restaurant name and the description to occupy 6 columns,
+         while we will leave six columns for displaying the restaurant logo in the future.
+         To do that we go into the jumbotron and define the classes for the inner divs as follows:-->
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
@@ -60,20 +63,22 @@
             </div>
         </div>
     </header>
-<!--3.- Using a container class.-->
-<!--3.- Modify the next div to add class and, then, divide each different div into rows.-->
+<!--3.- Using a container class.
+    3.- Modify the next div to add class and, then, divide each different div into rows.-->
     <div class="container">
-        <div class="row">
-<!--3.- Apply a column to certain values.-->
-<!-- For the remaining three div rows that contain the content, we'll define the classes -->
-<!-- for the inner divs as follows: "col-12 col-sm-4 order-sm-last col-md-3", and -->
-<!-- "col col-sm col-md"-->
-<!-- 3A.- Using Order with Column Layout Classes <order-sm-last/first>.-->
-<!-- Those "invert" the viewing order of the headers and its paragraphs.-->
-<!-- So, in the content rows, we'll have the title and description to alternate -->
-<!-- so that it gives an interesting look to the web page.-->
-<!-- For extra small screens, the default stacked layout works best.-->
-<!-- This can be accomplished by using the "order-sm-last" for the first and the third rows as follows:-->
+<!-- 4.- Apply a class 'row-content' to the line below:-->
+<!-- 4A.- Vertically Centering Content: -->
+        <div class="row row-content align-items-center">
+<!--3.- Apply a column to certain values.
+        For the remaining three div rows that contain the content, we'll define the classes
+        for the inner divs as follows: "col-12 col-sm-4 order-sm-last col-md-3", and
+        "col col-sm col-md"
+    3A.- Using Order with Column Layout Classes <order-sm-last/first>.
+        Those "invert" the viewing order of the headers and its paragraphs.
+        So, in the content rows, we'll have the title and description to alternate
+        so that it gives an interesting look to the web page.
+        For extra small screens, the default stacked layout works best.
+        This can be accomplished by using the "order-sm-last" for the first and the third rows as follows:-->
             <div class="col-12 col-sm-4 order-sm-last col-md-3"><!-- FirstRowInit.-->
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
@@ -85,7 +90,9 @@
         </div>
 
 <!-- 3.- Same as above numbered commentary on rows.-->
-        <div class="row">
+<!-- 4.- Apply a class 'row-content' to the line below:-->
+<!-- 4A.- Vertically Centering Content: -->
+        <div class="row row-content align-items-center">
 <!-- 3.- Apply a column to certain values.-->
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
@@ -97,10 +104,12 @@
             </div>
         </div>
 <!-- 3.- Same as above numbered commentary on rows.-->
-        <div class="row">
-<!-- 3.- Apply a column to certain values.-->
-<!-- 3A.- Using Order with Column Layout Classes <order-sm-last/first>.-->
-<!-- 3A.- Those "invert" the viewing order of the headers and its paragraphs.-->
+<!-- 4.- Apply a class 'row-content' to the line below:-->
+<!-- 4A.- Vertically Centering Content: -->
+        <div class="row row-content align-items-center">
+<!-- 3.- Apply a column to certain values.
+     3A.- Using Order with Column Layout Classes <order-sm-last/first>.
+     3A.- Those "invert" the viewing order of the headers and its paragraphs.-->
             <div class="col-12 col-sm-4 order-sm-last col-md-3"><!-- ThirdRowInit.-->
                 <h3>Meet our Culinary Specialists</h3>
             </div>
@@ -113,21 +122,24 @@
         </div>
     </div>
 
-    <footer>
+<!-- 4.- Apply the class footer from the styles.css.-->
+    <footer class="footer">
 <!-- 3.- Exact same as above commentary on containers.--->
-<!-- 3.- For the footer, let us define the classes for the inner divs as follows:-->
-<!-- "col-4 col-sm-2" ... "col-7 col-sm-5" ... "col-12 col-sm-4" ..."col-auto"-->
-<!-- In the footer add a container class to the first inner div and a row class to the second inner div.-->
+<!-- 3.- For the footer, let us define the classes for the inner divs as follows:
+         "col-4 col-sm-2" ... "col-7 col-sm-5" ... "col-12 col-sm-4" ..."col-auto"
+         In the footer add a container class to the first inner div and a row class to the second inner div.-->
         <div class="container">
-<!-- 3.- Exact same as above commentary on rows.-->>
-            <div class="row">
+<!-- 3.- Exact same as above commentary on rows.-->
+<!-- 4.- Apply a class 'row-content' to the line below:-->
+            <div class="row row-content">
 <!-- 3.- For small will use 4 and small to extralarge 2 columns.-->
-<!-- 3B.-Using Offset with Column Layout Classes <offset-1> (1 value to move).-->
-<!-- 3B.- That "moves" the viewing order by 1 column of the unordered list/list items.-->
-<!-- This updates the class as follows: "col-4 offset-1 col-sm-2" from "col-4 col-sm-2".-->
+<!-- 3B.- Using Offset with Column Layout Classes <offset-1> (1 value to move).
+     3B.- That "moves" the viewing order by 1 column of the unordered list/list items.
+          This updates the class as follows: "col-4 offset-1 col-sm-2" from "col-4 col-sm-2".-->
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
-                    <ul>
+<!-- 4.- List Styles.-->
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
@@ -147,8 +159,10 @@
 		           </address>
                 </div>
 <!-- 3.- This will use 12 columns first and 4 second.-->
-                <div class="col-12 col-sm-4">
-                    <div>
+<!-- 4D.- Centering Content, "align-self-center": -->
+                <div class="col-12 col-sm-4 align-self-center">
+<!-- 4C.- Centering Content, "text-center": -->
+                    <div class="text-center">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                         <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -159,7 +173,8 @@
                 </div>
            </div>
 <!-- 3.- Exact same as above numbered comentary on rows.-->
-           <div class="row">
+<!-- 4B.- Horizontally Centering Content: -->
+           <div class="row justify-content-center">
 <!-- 3.- This will automatically assign columns required for the content.-->     
                 <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
@@ -167,8 +182,8 @@
            </div>
         </div>
     </footer>
- <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
- <!-- This was added as per request from the tutor. Also Must be done to use JQ.js-->
+ <!-- jQuery first, then Popper.js, then Bootstrap JS.
+      This was added as per request from the tutor. Also Must be done to use JQ.js-->
  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
