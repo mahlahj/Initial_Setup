@@ -1,3 +1,9 @@
+/*Using Custom CSS classes
+We can define our own custom CSS classes in a separate CSS file, and also
+customize some of the built-in CSS classes.
+Created a folder named css. Then created a file named styles.css in the css folder.
+Open this file to edit the contents. Add the following CSS code to the file:
+.row-header, .row-content, .footer*/
 /* 1.- These are for the 'row' value in the html we're developing.*/
 .row-header {
     margin: 0px auto;
@@ -17,6 +23,10 @@
     padding: 20 px 0px 20px 0px;
 }
 
+/*Next set of customization are the jumbotron and the address by adding the following:
+.jumbotron
+.address
+*/
 /* 2.- These are added to change colors and overall style of the named div.*/
 .jumbotron {
     padding: 70px 30px 70px 30px;

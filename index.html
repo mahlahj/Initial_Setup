@@ -25,7 +25,7 @@
 
 <!-- 2.- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-<!-- 4.- With the next line we add the CSS styles made in the respective css folder of the project.-->
+<!-- 4.- The styles.css file with the next line adds the CSS styles made in the css folder of the project.-->
     <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
@@ -47,7 +47,11 @@
 <!-- 3.- Apply a row to this div to constrain it.
          The class row is added to the first-level inner div elements inside the container.
          This organizes the page into rows of content.-->
-<!-- 4.- Apply a class 'row header' to the line below:-->
+<!-- 4.- Apply a class 'row header' to the line below, then add these classes to the corresponding rows
+         in the index.html file as follows:
+         The first one is for the row in the <header>,
+         the next three for the rows in the content,
+         and the last one directly to the <footer> tag.-->
             <div class="row row-header">
 <!-- 3.- Apply a column to certain values.
          In the header row, we will display the restaurant name and the description to occupy 6 columns,
@@ -138,7 +142,10 @@
           This updates the class as follows: "col-4 offset-1 col-sm-2" from "col-4 col-sm-2".-->
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
-<!-- 4.- List Styles.-->
+<!-- 4.- List Styles.
+         We'll use the unordered list style list-unstyled to display the links at the bottom of the page
+         without the bullets.
+         To do this, we go to the links in the footer and update the ul as follows: clas="list-unstyled"-->
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
