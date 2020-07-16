@@ -40,3 +40,17 @@ Open this file to edit the contents. Add the following CSS code to the file:
     margin: 0px;
     color: #0f0f0f;
 }
+
+/*Next set of customization are the body and the navbar-dark by adding the following:
+body
+.navbar-dark
+*/
+/* 3.- These are added to change colors and overall style of the named div.*/
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: #512DA8;
+}

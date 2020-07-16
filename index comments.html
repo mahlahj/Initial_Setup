@@ -32,6 +32,35 @@
 </head>
 
 <body>
+<!-- 5.- Creating a Basic navigation Bar.
+         Use the <nav> HTML tag. Then add the class="navbar" to create the navigation var, add "navbar-dark" for a darker background bar.
+         Also add the navbar-expand-sm which make collapsible the nav bar on small screens. By adding "bg-primary" we start the color of the
+        "navbar" to blue, after proper tests we remove it because we've added a new concept in the "styles.css". 
+        The "fixed-top" fixes the navbar to the top of the browser, even as the page is scrolled, can be used as static or bottom.-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+<!-- 5.- Whatever is enclosed in this div will be as the rest of the webpage.-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span> <!-- 5.- This is a predet icon from bootstrap.-->
+            </button>
+<!-- 5.- This button will create a "collapsible" navigation bar or responsive/collapsible bar.-->
+            <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion
+<!-- 5.- This "brand" allows to display information as a branding in the navigation bar. (Logo, Motto, Etc. of a company.)-->
+            </a>
+            <div class="collapse navbar-collapse" id="Navbar">
+<!-- 5.- This navbar-nav is to add certain links to the navigation bar. The "mr-auto" is for formatting
+         automatically the margins to the right side of the page, which will push to the left the content.-->
+                <ul class="navbar-nav mr-auto">
+<!-- 5.- The "nav-item allows to display the items as horizontal links via the nav-link inside <a>.
+         Also we need to add "active" under the class to identify which is the active link-->
+                    <li class="nav-item active"><a class="nav-link" href="./index comments.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 <!-- 3.- We create a "Jumbotron" class onto the header.
          That will set apart the content of the header from the rest of the page.
          Add the class jumbotron to the header class as shown below.
@@ -72,9 +101,14 @@
 <!--3.- Using a container class.
     3.- Modify the next div to add class and, then, divide each different div into rows.-->
     <div class="container">
+<!-- 6.- We apply the "breacrumb" class to add another layer of navigation to the page.-->
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item active"><a href="./index comments.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="./aboutus.html">About Us</a></li>
+        </ol>
 <!-- 4.- Apply a class 'row-content' to the line below:-->
 <!-- 4A.- Vertically Centering Content: -->
-        <div class="row row-content align-items-center">
+        <div class="row">
 <!--3.- Apply a column to certain values.
         For the remaining three div rows that contain the content, we'll define the classes
         for the inner divs as follows: "col-12 col-sm-4 order-sm-last col-md-3", and
@@ -153,8 +187,8 @@
          without the bullets.
          To do this, we go to the links in the footer and update the ul as follows: clas="list-unstyled"-->
                     <ul class="list-unstyled">
-                        <li><a href="index comments.html">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="./index comments.html">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
