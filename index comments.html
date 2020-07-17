@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+<!-- 1.- Required meta tags ALWAYS come first.-->    
 <!-- 2.- This was added as per request from the tutor. Also Must be done to use BootStrap4
      2.- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -28,35 +28,62 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 <!-- 4.- The styles.css file with the next line adds the CSS styles made in the css folder of the project.-->
     <link rel="stylesheet" href="css/styles.css">
+<!-- 6.- Font-Awesome and Bootstrap-Social-->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
 <!-- 5.- Creating a Basic navigation Bar.
-         Use the <nav> HTML tag. Then add the class="navbar" to create the navigation var, add "navbar-dark" for a darker background bar.
-         Also add the navbar-expand-sm which make collapsible the nav bar on small screens. By adding "bg-primary" we start the color of the
-        "navbar" to blue, after proper tests we remove it because we've added a new concept in the "styles.css". 
-        The "fixed-top" fixes the navbar to the top of the browser, even as the page is scrolled, can be used as static or bottom.-->
+         Use the <nav> HTML tag. Then add the class="navbar" to create the navigation var,
+         add "navbar-dark" for a darker background bar. Also add the navbar-expand-sm which
+         makes collapsible the nav bar on small screens. By adding "bg-primary" we start
+         the color of the "navbar" to blue, after proper tests we remove it because we've added
+         a new concept in the "styles.css". 
+         THIS MUST BE ADDED IN THE <body> DIVISION AND BEFORE THE JUMBOTRON DIV.
+         We can see the use of the 'nav' element to specify the navigation information for the website.
+         This nav element is styled by the navbar that declares it as a navigation bar, and the navbar-dark
+         class to specify that the page should use the dark navigation bar.
+         Notice the addition of a link with the name of the restaurant. This is the brand name for the website.
+         We can replace this with the logo for the website. This is created by the <a class="navbar-brand"> tag.
+         In addition the inner 'ul' is used to specify the items to be put in the navigation bar.
+         This ul is styled with navbar-nav class to specify that the items should be displayed inline
+         inside the navigation bar. We also use the container class inside the navigation bar.
+         The "fixed-top" fixes the navbar to the top of the browser, even as the page is scrolled down,
+         and can be used as static or bottom.-->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-<!-- 5.- Whatever is enclosed in this div will be as the rest of the webpage.-->
+<!-- 5.- Whatever is enclosed in this div will be as the rest of the webpage.
+         This creates a button with three horizontal lines.
+         For medium to extra large screens, this button is hidden.
+         For small and extra small screens, this button becomes visible.
+         This button will act as the toggle for the navbar items.-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span> <!-- 5.- This is a predet icon from bootstrap.-->
             </button>
 <!-- 5.- This button will create a "collapsible" navigation bar or responsive/collapsible bar.-->
             <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion
-<!-- 5.- This "brand" allows to display information as a branding in the navigation bar. (Logo, Motto, Etc. of a company.)-->
+<!-- 5.- This "brand" allows to display information as a branding in the navigation bar.
+         (Logo, Motto, Etc. of a company.)-->
+<!-- 5A.- By doing this, we are specifying that this div with collapse and navbar-collapse classes
+         and with the id Navbar will be collapsed on small and xs screens, but can be toggled on or
+         off when the toggle button is clicked.
+         Note the use of data-toggle="collapse" data-target="#Navbar" within the button above.
+         This specifies that the menu items are collapsed on small and xs screens
+         when the toggle button is visible. They can be displayed or hidden by clicking the toggle button.-->
             </a>
             <div class="collapse navbar-collapse" id="Navbar">
-<!-- 5.- This navbar-nav is to add certain links to the navigation bar. The "mr-auto" is for formatting
+<!-- 5B.- This navbar-nav is to add certain links to the navigation bar. The "mr-auto" is for formatting
          automatically the margins to the right side of the page, which will push to the left the content.-->
                 <ul class="navbar-nav mr-auto">
 <!-- 5.- The "nav-item allows to display the items as horizontal links via the nav-link inside <a>.
-         Also we need to add "active" under the class to identify which is the active link-->
-                    <li class="nav-item active"><a class="nav-link" href="./index comments.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+         Also we need to add "active" under the class to identify which is the active link.-->
+<!-- 6.- The "fa fa-home" in the <span> is a "default" icon from the Font-Awesome class.-->
+                    <li class="nav-item active"><a class="nav-link" href="./index comments.html"><span class="icons fa fa-home"></span>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="icons fa fa-info"></span>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="icons fa fa-list"></span>Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="icons fa fa-address-card"></span>Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -201,9 +228,9 @@
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
 		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		              <i class="icon fa fa-phone-square fa-lg"></i>: +852 1234 5678<br>
+		              <i class="icon fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+		              <i class="icon fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
 
@@ -212,12 +239,12 @@
                 <div class="col-12 col-sm-4 align-self-center">
 <!-- 4C.- Centering Content, "text-center": -->
                     <div class="text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
+                        <a icon class="btn btn-social-icon btn-google" href="http://google.com/+"><i icon class="fa fa-google-plus fa-lg"></i></a>
+                        <a icon class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i icon class="fa fa-facebook-official fa-lg"></i></a>
+                        <a icon class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i icon class="fa fa-linkedin fa-lg"></i></a>
+                        <a icon class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i icon class="fa fa-twitter fa-lg"></i></a>
+                        <a icon class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i icon class="fa fa-youtube fa-lg"></i></a>
+                        <a icon class="btn btn-social-icon" href="mailto:"><i icon class="fa fa-envelope fa-lg"></i></a>
                     </div>
                 </div>
            </div>

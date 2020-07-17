@@ -54,3 +54,8 @@ body {
 .navbar-dark {
     background-color: #512DA8;
 }
+
+.icons {
+    padding: 10px 10px 10px 10px;
+    margin-right: 5px;
+}
