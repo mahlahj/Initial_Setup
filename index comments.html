@@ -63,7 +63,8 @@
                 <span class="navbar-toggler-icon"></span> <!-- 5.- This is a predet icon from bootstrap.-->
             </button>
 <!-- 5.- This button will create a "collapsible" navigation bar or responsive/collapsible bar.-->
-            <a class="navbar-brand" href="#">Ristorante Con Fusion
+<!-- 12.- We remove the name of the restaurant in favor of the img/logo.png.-->
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41">
 <!-- 5.- This "brand" allows to display information as a branding in the navigation bar.
          (Logo, Motto, Etc. of a company.)-->
 <!-- 5A.- By doing this, we are specifying that this div with collapse and navbar-collapse classes
@@ -80,10 +81,14 @@
 <!-- 5.- The "nav-item allows to display the items as horizontal links via the nav-link inside <a>.
          Also we need to add "active" under the class to identify which is the active link.-->
 <!-- 6.- The "fa fa-home" in the <span> is a "default" icon from the Font-Awesome class.-->
-                    <li class="nav-item active"><a class="nav-link" href="./index comments.html"><span class="icon fa fa-home"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="icon fa fa-info"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="icon fa fa-list"></span> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="icon fa fa-address-card"></span> Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./index comments.html">
+                        <span class="icon fa fa-home"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">
+                        <span class="icon fa fa-info"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">
+                        <span class="icon fa fa-list"></span> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html">
+                        <span class="icon fa fa-address-card"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -116,10 +121,14 @@
          To do that we go into the jumbotron and define the classes for the inner divs as follows:-->
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion 
+                        experience. Our lipsmacking creations will tickle your culinary senses!
+                    </p>
                 </div>
-<!--3.- Apply a column to certain values as mentioned above.-->
-                <div class="col-12 col-sm">
+<!-- 3.- Apply a column to certain values as mentioned above.-->
+<!-- 12.- We use the align-self-center for the logo of the restaurant.-->
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -136,7 +145,7 @@
         </ol>-->
 <!-- 4.- Apply a class 'row-content' to the line below:-->
 <!-- 4A.- Vertically Centering Content: -->
-        <div class="row">
+        <div class="row row-content align-items-center">
 <!--3.- Apply a column to certain values.
         For the remaining three div rows that contain the content, we'll define the classes
         for the inner divs as follows: "col-12 col-sm-4 order-sm-last col-md-3", and
@@ -153,8 +162,19 @@
 
 <!-- 3.- Apply a column to occupy the remaining columns not used above, and the "order-sm-first.-->
             <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+<!-- 12.- Adding media.-->
+                <div class="media">
+                    <img class="d-flex-mr-3 img-thumbnail align-self-center"
+                    src="img/uthappizza.png" alt="uthapizza">
+                    <div class="media-body">
+                        <h2 class="mt-0"> Uthappizza <span class="badge badge-danger"> HOT </span>
+                        <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block"> A unique combination of Indian Uthappam (pancake) 
+                            and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, 
+                            Vidalia onion, Guntur chillies and Buffalo Paneer.
+                        </p>
+                    </div>
+                </div>
             </div><!-- FirstRowEnding.-->
         </div>
 
@@ -170,7 +190,10 @@
 <!-- 3.- Apply a column to occupy the remaining columns not used above.-->
             <div class="col col-sm col-md">
                 <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <p>Featuring mouthwatering combinations with a choice of five different salads, 
+                    six enticing appetizers, six main entrees and five choicest desserts. 
+                    Free flowing bubbly and soft drinks. All for just $19.99 per person.
+                </p>
             </div>
         </div>
         
@@ -187,9 +210,18 @@
 
 <!-- 3.- Apply a column to occupy the remaining columns not used above.-->
             <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" 
+                    alt="alberto">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p>Award winning three-star Michelin chef with wide International experience having 
+                            worked closely with whos-who in the culinary world, he specializes in creating 
+                            mouthwatering Indo-Italian fusion experiences.
+                        </p>
+                    </div>
+                </div>
             </div><!-- ThirdRowEnding.-->
         </div>
     </div>
@@ -236,14 +268,21 @@
 		           </address>
                 </div>
 
-<!-- 8.- This adds a button to the webpage and assigns a determined action to it. refer to this exact same piece of HTML under ContactUs page.
-         We define the button bar using the btn-group class, and then add the three buttons using the <a> tag.
-         In this case, the three buttons are hyperlinks that cause an action and have an href associated with them.
-         We decided to use the <a> tag instead of the <button> tag. Note how the <a> tags have been styled using the btn class.
+<!-- 8.- This adds a button to the webpage and assigns a determined action to it. R
+         Refer to this exact same piece of HTML under ContactUs page.
+         We define the button bar using the btn-group class, and then add the three buttons using
+         the <a> tag.
+         In this case, the three buttons are hyperlinks that cause an action and have an href
+         associated with them.
+         We decided to use the <a> tag instead of the <button> tag. Note how the <a> tags have
+         been styled using the btn class.
                 <div class="btn-group" role="group">
-                    <a role="button" class="btn btn-primary" href="tel:+85212345678"><i class="fa fa-phone"></i> Call.</a>
-                    <a role="button" class="btn btn-info" href="#"><i class="fa fa-skype"></i> Skype.</a>
-                    <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email.</a>
+                    <a role="button" class="btn btn-primary" href="tel:+85212345678">
+                        <i class="fa fa-phone"></i> Call.</a>
+                    <a role="button" class="btn btn-info" href="#">
+                        <i class="fa fa-skype"></i> Skype.</a>
+                    <a role="button" class="btn btn-success" href="mailto:confusion@food.net">
+                        <i class="fa fa-envelope-o"></i> Email.</a>
                 </div>-->
 
 <!-- 3.- This will use 12 columns first and 4 second.-->
@@ -251,12 +290,18 @@
                 <div class="col-12 col-sm-4 align-self-center">
 <!-- 4C.- Centering Content, "text-center": -->
                     <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook-official fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+">
+                            <i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=">
+                            <i class="fa fa-facebook-official fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/">
+                            <i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">
+                            <i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/">
+                            <i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:">
+                            <i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
            </div>
