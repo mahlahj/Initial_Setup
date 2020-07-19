@@ -130,7 +130,12 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-            </div>
+
+                <div class="col-12 col-sm align-self-center">
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn bg-warning btn-secondary" href=""> RESERVE TABLE </a>
+                    </div>
+                </div>
         </div>
     </header>
     
@@ -188,12 +193,26 @@
             </div>
 
 <!-- 3.- Apply a column to occupy the remaining columns not used above.-->
+<!-- 12.- We change the values from:
             <div class="col col-sm col-md">
                 <h2>Weekend Grand Buffet</h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, 
                     six enticing appetizers, six main entrees and five choicest desserts. 
                     Free flowing bubbly and soft drinks. All for just $19.99 per person.
                 </p>
+            </div>
+        </div> to: -->
+            <div class="col col-sm col-md-9">
+                <h2 class="mt-0"> Weekend Grand Buffet <span class="badge badge-danger"> NEW </span></h2>
+                <div class="media"> 
+                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five 
+                    different salads, six enticing appetizers, six main entrees and five choicest desserts. 
+                    Free flowing bubbly and soft drinks. All for just $19.99 per person.
+                </p>
+                <img class="d-flex ml-2 img-thumbnail align-self-center" src="img/Buffet.png" alt="Buffet">
+                    <div class="media-body">
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -224,7 +243,85 @@
                 </div>
             </div><!-- ThirdRowEnding.-->
         </div>
+<!-- 12.- Reserve table card, radio buttons, and form. -->
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-md-8 offset-2">
+                <div class="card" id="reservetable">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <div class="col-12">
+                        <form>
+                            <div class="form-group row">
+                                <label for="numberofguests" class="col-md-2 col-form-label align-self-center">
+                                    <b>Number of Guests</b>
+                                </label>
+
+                                <div class="col-md-10">
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" 
+                                            name="numberofguests" id="numberofguests">1
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input"
+                                            name="numberofguests" id="numberofguests">2
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input"
+                                            name="numberofguests" id="numberofguests">3
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input"
+                                            name="numberofguests" id="numberofguests">4
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input"
+                                            name="numberofguests" id="numberofguests">5
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input"
+                                            name="numberofguests" id="numberofguests">6
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="dateandtime" class="col-md-2 col-form-label">
+                                    <b>Date and Time</b>
+                                </label>
+                                <div class="col-12 col-md-3">
+                                    <input type="text" class="form-control" id="date"
+                                        name="date" placeholder="Date">
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <input type="text" class="form-control" id="time"
+                                        name="time" placeholder="Time">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+</div>
+
 
 <!-- 4.- Apply the class footer from the styles.css.-->
     <footer class="footer">
