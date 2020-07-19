@@ -59,3 +59,7 @@ body {
     padding: 10px 10px 10px 10px;
     margin-right: 5px;
 }
+
+textarea {
+    resize: none; /* Disables resizability of the <textarea> tag.*/
+}
