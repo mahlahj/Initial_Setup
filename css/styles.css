@@ -63,7 +63,7 @@ body {
     padding: 10px;
 }
 
-/*These classes are to structure the carousel color, heigh and position.*/
+/*These classes are to structure the carousel color, height and position.*/
 .carousel {
     background: #512da8;
 }
@@ -77,6 +77,15 @@ body {
     top: 0;
     left: 0;
     min-height: 300px;
+}
+
+/*CSS properties to reposition the buttons to the right column of the Carousel.
+For the element with the ID carouselButtons we'll position it to the right edge and bottom.*/
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
 }
 
 .icon {
