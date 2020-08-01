@@ -1,98 +1,57 @@
-/*Using Custom CSS classes
-We can define our own custom CSS classes in a separate CSS file, and also
-customize some of the built-in CSS classes.
-Created a folder named css. Then created a file named styles.css in the css folder.
-Open this file to edit the contents. Add the following CSS code to the file:
-.row-header, .row-content, .footer*/
-/* 1.- These are for the 'row' value in the html we're developing.*/
 .row-header {
-    margin: 0px auto;
-    padding: 0px auto;
+  margin: 0px auto;
+  padding: 0px 0px;
 }
-
 .row-content {
-    margin: 0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height: 4px;
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
 }
-
 .footer {
-    background-color: #D1C4E9;
-    margin: 0px auto;
-    padding: 20 px 0px 20px 0px;
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px;
 }
-
-/*Next set of customization are the jumbotron and the address by adding the following:
-.jumbotron
-.address
-*/
-/* 2.- These are added to change colors and overall style of the named div.*/
 .jumbotron {
-    padding: 70px 30px 70px 30px;
-    margin: 0px auto;
-    background: #9575CD;
-    color: floralwhite;
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #9575CD;
+  color: floralwhite;
 }
-
-.address {
-    font-size: 80%;
-    margin: 0px;
-    color: #0f0f0f;
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
 }
-
-/*Next set of customization are the body and the navbar-dark by adding the following:
-body
-.navbar-dark
-*/
-/* 3.- These are added to change colors and overall style of the named div.*/
 body {
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
 }
-
 .navbar-dark {
-    background-color: #512DA8;
+  background-color: #512DA8;
 }
-
-/*These are the CSS atributes for the tab-content, by specifing: */
 .tab-content {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
 }
-
-/*These classes are to structure the carousel color, height and position.*/
 .carousel {
-    background: #512da8;
+  background: #512DA8;
 }
-
-.carousel-item {
-    height: 200px;
+.carousel .carousel-item {
+  height: 300px;
 }
-
-.carousel-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 200px;
+.carousel .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
 }
-
-/*CSS properties to reposition the buttons to the right column of the Carousel.
-For the element with the ID carouselButtons we'll position it to the right edge and bottom.*/
 #carouselButton {
-    right: 0px;
-    position: absolute;
-    bottom: 0px;
-    z-index: 1;
-}
-
-.icon {
-    padding: 10px 10px 10px 10px;
-    margin-right: 5px;
-}
-
-textarea {
-    resize: none; /* Disables resizability of the <textarea> tag.*/
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
 }
