@@ -17,6 +17,12 @@ $carousel-item-height: 300px;
     min-height: 400px;
 }
 
+.row-content {
+    @include zero-margin (50px,0px);
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
 .footer {
     background-color: $background-pale;
     @include zero-margin(20px, 0px)
@@ -69,4 +75,17 @@ body {
     right: 0px;
     position: absolute;
     bottom: 0px;
+    z-index: 1;
+}
+
+.modal-header {
+    background:$background-dark;
+    color:floralwhite;
+    button {
+        color:floralwhite;
+    }
+}
+
+.modal-body {
+    background:$background-pale;
 }
