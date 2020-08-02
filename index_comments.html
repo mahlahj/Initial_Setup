@@ -25,12 +25,16 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 <!-- 2.- Bootstrap CSS -->
+<!-- 21.- Before the Bootstrap we add the usemin. And will be combined and concatenated. -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 <!-- 4.- The styles.css file with the next line adds the CSS styles made in the css folder of the project.-->
     <link rel="stylesheet" href="css/styles.css">
 <!-- 6.- Font-Awesome and Bootstrap-Social-->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <!-- endbuild -->
+
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -615,10 +619,12 @@
     </footer>
     
 <!-- jQuery first, then Popper.js, then Bootstrap JS.
-     This was added as per request from the tutor. Also Must be done to use JQ.js-->
+     This was added as per request from the tutor. Also Must be done to use JQ.js. Also the usemin.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
 <!-- 20.- Look below comment. -->
     <script src="js/scripts.js"></script>
 <!-- 15.- We add another script in JQery sintax to make functional the above button tag.
