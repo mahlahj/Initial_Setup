@@ -25,6 +25,7 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "bootstrap-social": "^5.1.1",
+    "browser-sync": "^2.26.12",
     "font-awesome": "^4.7.0",
     "grunt": "^1.2.1",
     "grunt-browser-sync": "^2.2.0",
@@ -39,6 +40,9 @@
     "grunt-htmlmin": "^0.1.4",
     "grunt-sass": "^3.1.0",
     "grunt-usemin": "^3.1.1",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^4.1.0",
     "jit-grunt": "^0.10.0",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",

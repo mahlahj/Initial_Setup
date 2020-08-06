@@ -121,6 +121,8 @@ module.exports = function (grunt) {
                 length: 20,
             },
             release: {
+                /*  filerev:release hashes(md5) all assets (images, js and css )
+                    in dist directory.b*/
                 files: [{
                     src: [
                         'dist/js/*.js',
@@ -129,6 +131,10 @@ module.exports = function (grunt) {
                 }]
             }
         },
+        /*Usemin
+        Replaces all assets with their revved version in html and css files.
+        options.assetDirs contains the directories for finding the assets
+        according to their relative paths. */
         usemin: {
             html: ['dist/contactus.html', 'dist/aboutus.html', 'dist/index'],
             options: {
